@@ -1,0 +1,106 @@
+#full-screen-display {
+	margin-left: -10px;
+	margin-top: -10px;
+	width: 100vw;
+	height: calc(99vh + 2px);
+	background-color: black;
+	display: flex;
+	flex-direction: row;
+}
+
+#left-screen {
+	width: 75vw;
+}
+
+#right-screen {
+	width: 25vw;
+	background-color: black;
+	color: white;
+}
+
+
+#display-sky-background {
+	width: 75vw;
+	height: calc(99vh + 2px);
+	object-fit: cover;
+}
+
+#rocket-wrapper {
+	position: absolute;
+	width: 3vw;
+	height: 3vh;
+	object-fit: cover;
+}
+
+.display-mars {
+	position: absolute;
+	height: 8vh;
+}
+
+.display-station {
+	position: absolute;
+	width: 5vw;
+	transform: rotate(30deg);
+}
+
+#LGLogo{
+	width: 25vw;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+#title-content {
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+#dashboard-content {
+	line-height: 20px;
+	font-size: 18px;
+	padding-left: 4px;
+	padding-bottom: 4px;
+}
+
+
+.display-asteroid {
+	position: absolute;
+	width: 3vw;
+}
+
+#rocketship {
+	width: 100%;
+}
+
+#explosion {
+	animation-name: boom;
+	animation-duration: 4s;
+	opacity: 0;
+	width: 200%;
+}
+
+@keyframes boom {
+	from {
+		width: 100%;
+		opacity: 1;
+		
+	}
+  to {
+		opacity: 0;
+		width: 200%;
+	}
+}
+
+#line {
+	display: flex;
+	flex-direction: row;
+}
+
+#square {
+	margin-left: 8px;
+	width: 5vw;
+	height: 20px;
+}
